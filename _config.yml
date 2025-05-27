@@ -1,17 +1,14 @@
-# Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
-description: >
-  Build Jekyll site with the GitBook style.
+title: red-sprout blog       # 블로그 이름
+description: red-sprout’s personal tech blog  # 설명 (원하시면 바꿔드립니다)
+url: "https://red-sprout.github.io"  # GitHub Pages 주소
+baseurl: ""                  # 사용자 페이지는 빈 값으로 유지
+
+author:
+  name: 주재완
+  github: red-sprout         # GitHub 링크
 
 version:          1.0
 gitbook_version:  3.2.3
-
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
-rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
 remote_theme: sighingnow/jekyll-gitbook
@@ -72,3 +69,15 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+
+# GitHub Pages 호환용 설정
+github:
+  is_project_page: false     # 사용자 페이지이므로 false
+
+# 소셜 링크 (footer 등에 노출)
+footer_links:
+  - title: GitHub
+    url: https://github.com/red-sprout
+
+# Google Analytics는 설정 시 ID 추가
+google_analytics: ""
